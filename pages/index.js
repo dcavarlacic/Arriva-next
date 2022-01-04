@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         
-        <img src='../ArrivaLogoBig.png'/>
+        <img src='/ArrivaLogoBig.png'/>
       </main>
 
       <Footer />
