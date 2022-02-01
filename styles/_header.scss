@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+    .MuiIconButton-colorPrimary {
+      color: #fff;
+    }
+    .logo {
+      z-index: 2;
+    }
+ 
+      a {
+        display: block;
+        line-height: 1.25;
+        text-decoration: none;
+        color: #fff;
+        position: relative;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: color .25s ease;
+        margin: 0 16px;
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          top: -258%;
+          height: 4px;
+          -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transform-origin: left center;
+          transform-origin: left center;
+          -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.79, 0.01, 0.22, 0.99) 0s, -webkit-transform-origin 0s step-end 0.25s;
+          transition: -webkit-transform 0.25s cubic-bezier(0.79, 0.01, 0.22, 0.99) 0s, -webkit-transform-origin 0s step-end 0.25s;
+          transition: transform 0.25s cubic-bezier(0.79, 0.01, 0.22, 0.99) 0s, transform-origin 0s step-end 0.25s;
+          transition: transform 0.25s cubic-bezier(0.79, 0.01, 0.22, 0.99) 0s, transform-origin 0s step-end 0.25s, -webkit-transform 0.25s cubic-bezier(0.79, 0.01, 0.22, 0.99) 0s, -webkit-transform-origin 0s step-end 0.25s;
+          background-color: $white;
+        }
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+          
+          &:after {
+            content: "";
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transform-origin: right center;
+            transform-origin: right center;
+          }
+        }
+      }
+
+  }

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Arriva Serif';
+    src: url('/fonts/ArrivaSerif-Light.woff2') format('woff2'),
+        url('/fonts/ArrivaSerif-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+h1 {
+    font-family: 'Arriva Serif';
+    font-size: 3.75rem;
+    font-weight: 300;
+}

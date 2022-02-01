@@ -1,6 +1,4 @@
-import '@styles/globals.scss';
-import { createTheme,  ThemeProvider } from '@mui/material/styles';
-
+import { createTheme } from '@mui/material/styles';
 
 const arriva = createTheme({
   palette: {
@@ -36,38 +34,14 @@ const arriva = createTheme({
     borderRadius: 0,
   },
   components: {
-    MuiButton: {
-      styleOverrides: {
-        outlined: {
-          border:'2px solid',
-          padding: '12px 16px',
-          "&:hover": {border:'2px solid'},
-        },
-      },
+    // Name of the component
+    MuiButtonBase: {
       defaultProps: {
         // The props to change the default for.
         disableRipple: true, // No more ripple!
       },
     },
-    MuiAppBar: {
-      defaultProps: {
-        color: 'transparent',
-        elevation: '0',
-      },
-    },
   },
-  
 });
 
-function Application({ Component, pageProps }) {
-  
-  return (
-    
-    <ThemeProvider theme={arriva}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-    
-  ) 
-}
-
-export default Application
+export default arriva

@@ -1,0 +1,35 @@
+.hero {
+    background-color: #050d21;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    h1 {
+        width: 490px;
+        margin: 35px 0;
+    }
+    .hero-image {
+        background: url('/images/hero-image.png') no-repeat right;
+        background-size: cover;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 0;
+    }
+    .container {
+        z-index: 1;
+        flex-direction: row;
+    }
+}
+@media (min-width: 0px) {
+    .hero-image {
+        display: none;
+    }
+}
+@media (min-width: 900px) {
+    .hero-image {
+        display: flex;
+    }
+}
